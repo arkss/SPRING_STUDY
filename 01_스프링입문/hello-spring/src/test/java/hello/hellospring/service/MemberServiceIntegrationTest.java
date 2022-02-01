@@ -18,7 +18,7 @@ class MemberServiceIntegrationTest {
     @Autowired MemberRepository memberRepository;
 
     @Test
-    public void 회원가입() throws Excepti    on {
+    public void 회원가입() throws Exception {
         //Given
         Member member = new Member();
         member.setName("hello");
