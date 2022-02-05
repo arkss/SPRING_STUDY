@@ -1,3 +1,6 @@
+# 04. AppConfig 리팩터링
+
+```java
 package hello.core;
 
 import hello.core.discount.DiscountPolicy;
@@ -29,3 +32,7 @@ public class AppConfig {
         return new FixDiscountPolicy();
     }
 }
+```
+
+* `new MemoryMemberRepository()` 이 중복이었는데 제거되었다. 
+* AppConfig를 보면 역할과 구현 클래스가 한 눈에 들어온다. 애플리케이션 전체 구성이 어떻게 되어있는지 빠르게 파악할 수 있다.
